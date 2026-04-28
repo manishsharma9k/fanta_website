@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fanta – Feel the Fizz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">FANTA</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#flavors">Flavors</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="bubbleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="bottle-wrap">
+        <div class="bottle">
+          <div class="bottle-liquid"></div>
+          <div class="bottle-shine"></div>
+          <div class="bottle-label">
+            <span>Fanta</span>
+            <small>Orange</small>
+          </div>
+          <div class="bottle-cap"></div>
+          <div class="bubbles-inside">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="splash-ring r1"></div>
+        <div class="splash-ring r2"></div>
+        <div class="splash-ring r3"></div>
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="word w1">Feel</span>
+          <span class="word w2">The</span>
+          <span class="word w3">Fizz</span>
+        </h1>
+        <p class="hero-sub">Bursting with real fruit flavor. Every sip is a celebration.</p>
+        <a href="#flavors" class="cta-btn">Explore Flavors</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- FLAVORS -->
+  <section class="flavors" id="flavors">
+    <h2 class="section-title reveal">Our Flavors</h2>
+    <div class="flavor-grid">
+
+      <div class="flavor-card reveal" data-color="#FF6B00" data-delay="0">
+        <div class="card-glow"></div>
+        <div class="card-can orange-can">
+          <div class="can-body">
+            <div class="can-label">
+              <span>Fanta</span>
+              <small>Orange</small>
+            </div>
+          </div>
+          <div class="can-top"></div>
+          <div class="can-bottom"></div>
+        </div>
+        <h3>Orange</h3>
+        <p>The classic. Zesty, sweet, and full of sunshine.</p>
+        <button class="flavor-btn">Try It</button>
+      </div>
+
+      <div class="flavor-card reveal" data-color="#00C853" data-delay="150">
+        <div class="card-glow"></div>
+        <div class="card-can green-can">
+          <div class="can-body">
+            <div class="can-label">
+              <span>Fanta</span>
+              <small>Green Apple</small>
+            </div>
+          </div>
+          <div class="can-top"></div>
+          <div class="can-bottom"></div>
+        </div>
+        <h3>Green Apple</h3>
+        <p>Crisp, tart, and refreshingly bold.</p>
+        <button class="flavor-btn">Try It</button>
+      </div>
+
+      <div class="flavor-card reveal" data-color="#E91E8C" data-delay="300">
+        <div class="card-glow"></div>
+        <div class="card-can pink-can">
+          <div class="can-body">
+            <div class="can-label">
+              <span>Fanta</span>
+              <small>Strawberry</small>
+            </div>
+          </div>
+          <div class="can-top"></div>
+          <div class="can-bottom"></div>
+        </div>
+        <h3>Strawberry</h3>
+        <p>Sweet, fruity, and irresistibly pink.</p>
+        <button class="flavor-btn">Try It</button>
+      </div>
+
+      <div class="flavor-card reveal" data-color="#9C27B0" data-delay="450">
+        <div class="card-glow"></div>
+        <div class="card-can grape-can">
+          <div class="can-body">
+            <div class="can-label">
+              <span>Fanta</span>
+              <small>Grape</small>
+            </div>
+          </div>
+          <div class="can-top"></div>
+          <div class="can-bottom"></div>
+        </div>
+        <h3>Grape</h3>
+        <p>Deep, rich, and bursting with grape goodness.</p>
+        <button class="flavor-btn">Try It</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner reveal">
+      <div class="about-text">
+        <h2>Born to Be Bold</h2>
+        <p>Since 1940, Fanta has been bringing people together with vibrant flavors and unstoppable energy. Made with real fruit flavor, every can is a burst of joy.</p>
+        <div class="stats">
+          <div class="stat"><span class="count" data-target="190">0</span><small>Countries</small></div>
+          <div class="stat"><span class="count" data-target="100">0</span><small>+ Flavors</small></div>
+          <div class="stat"><span class="count" data-target="1940">0</span><small>Est. Year</small></div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="orbit-ring">
+          <div class="orbit-item oi1">🍊</div>
+          <div class="orbit-item oi2">🍎</div>
+          <div class="orbit-item oi3">🍇</div>
+          <div class="orbit-item oi4">🍓</div>
+        </div>
+        <div class="center-logo">F</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY FANTA -->
+  <section class="why" id="why">
+    <h2 class="section-title reveal">Why Fanta?</h2>
+    <div class="why-grid">
+      <div class="why-card reveal" data-delay="0">
+        <div class="why-icon">🍹</div>
+        <h3>Real Fruit Flavor</h3>
+        <p>Every Fanta is crafted with real fruit extracts — no artificial shortcuts. You taste the difference in every single sip.</p>
+      </div>
+      <div class="why-card reveal" data-delay="150">
+        <div class="why-icon">✨</div>
+        <h3>No Artificial Colors</h3>
+        <p>We keep it clean. Fanta uses only natural colorings derived from fruits and vegetables, so what you see is what you get.</p>
+      </div>
+      <div class="why-card reveal" data-delay="300">
+        <div class="why-icon">♻️</div>
+        <h3>Eco-Friendly Packaging</h3>
+        <p>Our cans and bottles are made from 100% recyclable materials. Enjoy your Fanta and help the planet at the same time.</p>
+      </div>
+      <div class="why-card reveal" data-delay="450">
+        <div class="why-icon">🌍</div>
+        <h3>Loved Worldwide</h3>
+        <p>From Tokyo to Toronto, Fanta is the go-to fizzy drink for over 3 billion people across 190+ countries every year.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT'S MADE -->
+  <section class="process" id="process">
+    <h2 class="section-title reveal">From Fruit to Fizz</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal" data-delay="0">
+        <div class="tl-icon">🌿</div>
+        <div class="tl-content">
+          <h3>Step 1 — Sourcing</h3>
+          <p>We partner with local farmers to hand-pick the freshest fruits at peak ripeness, ensuring maximum natural flavor in every batch.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" data-delay="150">
+        <div class="tl-icon">🧪</div>
+        <div class="tl-content">
+          <h3>Step 2 — Extraction</h3>
+          <p>Fruit juices and natural extracts are carefully cold-pressed to preserve their vibrant taste, aroma, and nutritional goodness.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" data-delay="300">
+        <div class="tl-icon">💧</div>
+        <div class="tl-content">
+          <h3>Step 3 — Blending</h3>
+          <p>Our master blenders combine the extracts with purified water and just the right amount of natural sweeteners for that perfect balance.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" data-delay="450">
+        <div class="tl-icon">🫧</div>
+        <div class="tl-content">
+          <h3>Step 4 — Carbonation</h3>
+          <p>The blend is infused with CO₂ under precise pressure, creating those iconic Fanta bubbles that tickle your taste buds.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal" data-delay="600">
+        <div class="tl-icon">🥤</div>
+        <div class="tl-content">
+          <h3>Step 5 — Bottling</h3>
+          <p>Sealed fresh in eco-friendly cans and bottles, your Fanta is ready to travel from our factory straight to your hands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <h2 class="section-title reveal">What People Say</h2>
+    <div class="testi-grid">
+      <div class="testi-card reveal" data-delay="0">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Fanta Orange is literally my childhood in a can. Nothing else comes close to that burst of citrus flavor. I drink one every single day!"</p>
+        <div class="testi-author">
+          <div class="author-avatar">S</div>
+          <div><strong>Sarah M.</strong><small>New York, USA</small></div>
+        </div>
+      </div>
+      <div class="testi-card reveal" data-delay="150">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"The Green Apple flavor is absolutely incredible. It's the perfect balance of sweet and tart. My whole family is obsessed with it!"</p>
+        <div class="testi-author">
+          <div class="author-avatar">K</div>
+          <div><strong>Kenji T.</strong><small>Tokyo, Japan</small></div>
+        </div>
+      </div>
+      <div class="testi-card reveal" data-delay="300">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"I tried Fanta Strawberry at a party and I've been hooked ever since. The flavor is so real and refreshing. Best fizzy drink on the market!"</p>
+        <div class="testi-author">
+          <div class="author-avatar">A</div>
+          <div><strong>Amara O.</strong><small>Lagos, Nigeria</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter-inner reveal">
+      <div class="nl-badge">🎉 Exclusive Offers</div>
+      <h2>Stay in the Loop</h2>
+      <p>Be the first to know about new flavors, limited editions, and special deals. Join the Fanta family today!</p>
+      <form class="nl-form" id="nlForm">
+        <div class="nl-input-wrap">
+          <input type="email" placeholder="Enter your email address" required />
+          <button type="submit">Subscribe</button>
+        </div>
+        <p class="nl-note">No spam, ever. Unsubscribe anytime. 🍊</p>
+      </form>
+      <div class="nl-success" id="nlSuccess">🎊 You're in! Welcome to the Fanta family.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Fanta. All rights reserved. Feel the Fizz.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
